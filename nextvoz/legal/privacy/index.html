@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101419" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Chính sách quyền riêng tư của ứng dụng NextVoz.">
+  <title>NextVoz Privacy</title>
+  <style>
+    :root { color-scheme:light dark; --bg:#f5f7fa; --surface:#fff; --text:#17202a; --muted:#56616f; --line:#7a8796; --accent:#2458a6; --soft:#eaf1fb; }
+    * { box-sizing:border-box; }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--accent); text-underline-offset:.18em; overflow-wrap:anywhere; }
+    a:hover { text-decoration-thickness:.15em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:.15rem; }
+    .skip { position:absolute; left:-9999px; top:.5rem; }
+    .skip:focus { left:.75rem; z-index:2; padding:.5rem .75rem; background:var(--surface); }
+    header, nav, main, footer { width:min(100% - 2rem, 70rem); margin-inline:auto; }
+    header { padding:3rem 0 1.3rem; }
+    h1 { margin:.25rem 0; font-size:clamp(2rem,6vw,3.25rem); line-height:1.1; letter-spacing:-.03em; }
+    .eyebrow { margin:0; color:var(--accent); font-weight:750; }
+    .lead, .meta, footer { color:var(--muted); }
+    .meta { display:flex; flex-wrap:wrap; gap:.4rem 1.2rem; font-size:.92rem; }
+    body > nav { display:flex; flex-wrap:wrap; gap:.5rem 1rem; padding:.8rem 0 1.5rem; border-bottom:1px solid var(--line); }
+    body > nav a[aria-current="page"] { color:var(--text); font-weight:750; text-decoration:none; }
+    body > nav a { display:inline-flex; align-items:center; min-height:44px; padding:.25rem .2rem; }
+    main { padding:1.5rem 0; }
+    .notice { padding:1rem 1.1rem; border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:.6rem; background:var(--soft); }
+    .toc { margin:1rem 0; padding:1rem 1.2rem; border:1px solid var(--line); border-radius:.75rem; background:var(--surface); }
+    .toc strong { display:block; margin-bottom:.4rem; }
+    .toc ol { columns:2; margin:0; padding-left:1.4rem; }
+    .toc a { display:inline-flex; align-items:center; min-height:44px; }
+    article { margin-top:1rem; padding:1.3rem; border:1px solid var(--line); border-radius:.75rem; background:var(--surface); }
+    article > h2 { margin:0 0 1rem; font-size:1.35rem; }
+    .languages { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; }
+    .languages > section + section { border-left:1px solid var(--line); padding-left:1.5rem; }
+    h3 { margin:0 0 .45rem; font-size:1rem; color:var(--accent); }
+    p { margin:.55rem 0; }
+    ul { margin:.5rem 0; padding-left:1.25rem; }
+    li + li { margin-top:.35rem; }
+    footer { padding:1rem 0 3rem; font-size:.92rem; }
+    @media (prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } }
+    @media (max-width:45rem) { header { padding-top:2rem; } .toc ol { columns:1; } .languages { grid-template-columns:1fr; } .languages > section + section { border-left:0; border-top:1px solid var(--line); padding:1rem 0 0; } }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101419; --surface:#171d24; --text:#eef3f8; --muted:#b5c0cc; --line:#75869a; --accent:#8bb8ff; --soft:#18263a; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Bỏ qua đến nội dung / <span lang="en">Skip to content</span></a>
+  <header>
+    <p class="eyebrow" lang="en" translate="no">NextVoz</p>
+    <h1>Chính sách quyền riêng tư</h1>
+    <p class="lead" lang="en">Privacy Policy</p>
+    <p class="meta"><span>Phiên bản / <span lang="en">Version</span>: <strong>1.0</strong></span><span>Hiệu lực / <span lang="en">Effective</span>: <time datetime="2026-09-09">2026-09-09</time></span></p>
+  </header>
+  <nav aria-label="Điều hướng pháp lý"><a href="../">Trang pháp lý / <span lang="en">Legal home</span></a><a href="../terms/">Điều khoản / <span lang="en">Terms</span></a><a href="./" aria-current="page">Quyền riêng tư / <span lang="en">Privacy</span></a></nav>
+  <main id="content" tabindex="-1">
+    <aside class="notice"><strong>Tóm tắt / <span lang="en">Summary</span>:</strong> NextVoz là ứng dụng khách độc lập. Ứng dụng xử lý dữ liệu cần thiết để kết nối bạn với diễn đàn, lưu một số dữ liệu trên thiết bị và có thể dùng dịch vụ Google cùng nhà cung cấp nội dung ngoài như mô tả dưới đây. <span lang="en">NextVoz is an independent client. It processes data needed to connect you to the forum, stores some data on your device, and may use Google services and external content providers as described below.</span></aside>
+    <nav class="toc" aria-label="Mục lục"><strong>Mục lục</strong><ol><li><a href="#scope">Phạm vi và vai trò / <span lang="en">Scope and roles</span></a></li><li><a href="#sign-in">Đăng nhập và phiên / <span lang="en">Sign-in and session</span></a></li><li><a href="#device-data">Dữ liệu trên thiết bị / <span lang="en">Device data</span></a></li><li><a href="#forum-activity">Hoạt động gửi đến diễn đàn / <span lang="en">Forum activity</span></a></li><li><a href="#external-services">Nội dung và dịch vụ ngoài / <span lang="en">External services</span></a></li><li><a href="#google-services">Phân tích và quảng cáo / <span lang="en">Analytics and advertising</span></a></li><li><a href="#retention">Chia sẻ, lưu giữ và xóa / <span lang="en">Sharing, retention and deletion</span></a></li><li><a href="#security">Bảo mật và lựa chọn / <span lang="en">Security and choices</span></a></li><li><a href="#children">Trẻ em và đối tượng sử dụng / <span lang="en">Children and audience</span></a></li><li><a href="#changes">Thay đổi và liên hệ / <span lang="en">Changes and contact</span></a></li></ol></nav>
+
+    <article id="scope"><h2>1. Phạm vi &amp; vai trò / <span lang="en">Scope &amp; roles</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Chính sách này mô tả việc xử lý dữ liệu trong NextVoz dựa trên mã nguồn phiên bản hiện tại. Diễn đàn được kết nối vận hành tài khoản, nội dung, kiểm duyệt và máy chủ riêng; dữ liệu gửi đến diễn đàn chịu chính sách của đơn vị đó. Các trang hoặc SDK bên thứ ba cũng có chính sách riêng.</p></section>
+      <section lang="en"><h3>English</h3><p>This policy describes processing in the current NextVoz source. The connected forum separately operates its accounts, content, moderation, and servers; data sent to it is subject to its operator's policies. Third-party sites and SDKs also have their own policies.</p></section>
+    </div></article>
+
+    <article id="sign-in"><h2>2. Đăng nhập &amp; phiên / <span lang="en">Sign-in &amp; session</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><ul><li>Ứng dụng xử lý tên đăng nhập hoặc email, mật khẩu và mã xác minh hai bước (nếu cần) trong bộ nhớ để gửi trực tiếp đến tên miền diễn đàn đang được cấu hình.</li><li>Mã nguồn hiện tại cấu hình điểm kết nối HTTPS. Không nên xem điều này là bảo đảm tuyệt đối cho mọi mạng, thiết bị hoặc dịch vụ ngoài.</li><li>Cơ sở dữ liệu cục bộ được kiểm tra không lưu mật khẩu. Mã nguồn không cho thấy chuỗi thông tin đăng nhập được xóa an toàn khỏi bộ nhớ ngay sau đăng nhập.</li><li>Để duy trì đăng nhập, ứng dụng lưu cục bộ một số cookie xác thực/thiết bị tin cậy và thông tin hồ sơ cơ bản. Cookie này có thể cho phép truy cập phiên đã xác thực.</li></ul></section>
+      <section lang="en"><h3>English</h3><ul><li>The app processes your username or email, password, and two-step verification code (when required) in memory and sends them directly to the currently configured forum domain.</li><li>The current source configures an HTTPS endpoint. This should not be treated as an absolute guarantee for every network, device, or external service.</li><li>The audited local database does not store the password. The source does not show credential strings being securely erased from memory immediately after sign-in.</li><li>To keep you signed in, the app locally stores selected authentication/trusted-device cookies and basic profile information. Those cookies can provide access to an authenticated session.</li></ul></section>
+    </div></article>
+
+    <article id="device-data"><h2>3. Dữ liệu trên thiết bị / <span lang="en">Data on your device</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Ứng dụng có thể lưu:</p><ul><li>cookie phiên được chọn và thông tin hồ sơ cơ bản;</li><li>cài đặt giao diện, xác nhận nội quy và dấu thời gian giới hạn quảng cáo;</li><li>bookmark cục bộ gồm tiêu đề và liên kết bài/chủ đề;</li><li>ảnh tạm để hiển thị; ảnh có thể còn lại sau sự cố cho đến lần dọn dẹp tiếp theo;</li><li>ảnh bạn chủ động lưu vào thư mục hình ảnh của thiết bị.</li></ul><p>Dữ liệu ứng dụng cục bộ dùng SQLite. Mã nguồn được kiểm tra không cho thấy mã hóa ở tầng ứng dụng cho cơ sở dữ liệu này.</p></section>
+      <section lang="en"><h3>English</h3><p>The app may store:</p><ul><li>selected session cookies and basic profile information;</li><li>interface settings, forum-rules acknowledgement, and ad cooldown timestamps;</li><li>local bookmarks containing thread/post titles and links;</li><li>temporary images for display, which may remain after a crash until later cleanup;</li><li>images you explicitly save to device picture storage.</li></ul><p>Local app data uses SQLite. The audited source does not show application-layer encryption for this database.</p></section>
+    </div></article>
+
+    <article id="forum-activity"><h2>4. Hoạt động gửi đến diễn đàn / <span lang="en">Activity sent to the forum</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Khi bạn sử dụng tính năng diễn đàn, ứng dụng gửi yêu cầu và dữ liệu cần thiết đến diễn đàn. Dữ liệu có thể gồm trang đã yêu cầu, tìm kiếm, phản hồi/bài trả lời, lý do báo cáo, cảm xúc, lựa chọn bình chọn, theo dõi, bỏ qua và mã chống giả mạo do diễn đàn cấp. Khi đăng nhập, diễn đàn có thể liên kết các hành động này với tài khoản của bạn.</p><p>Thao tác bỏ qua cập nhật thiết lập tài khoản phía diễn đàn; đây không phải danh sách chặn cục bộ và có thể không ngăn mọi tương tác.</p></section>
+      <section lang="en"><h3>English</h3><p>When you use forum features, the app sends the requests and information needed by the forum. This may include requested pages, searches, replies, report reasons, reactions, poll choices, follows, ignores, and forum-issued anti-forgery tokens. When signed in, the forum can associate those actions with your account.</p><p>The ignore action updates an account setting at the forum; it is not a local block list and may not prevent every interaction.</p></section>
+    </div></article>
+
+    <article id="external-services"><h2>5. Nội dung &amp; dịch vụ ngoài / <span lang="en">External content &amp; services</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Bài viết có thể chứa ảnh, video hoặc liên kết ngoài. Để hiển thị nội dung và bản xem trước, ứng dụng có thể liên hệ website được liên kết, máy chủ ảnh hoặc nhà cung cấp nội dung như nền tảng video/mạng xã hội. Họ có thể nhận thông tin yêu cầu mạng thông thường như địa chỉ IP, thời điểm, User-Agent và URL được yêu cầu. NextVoz không kiểm soát việc xử lý dữ liệu của họ. Khi khởi động, ứng dụng cũng liên hệ Google Play để kiểm tra phiên bản ứng dụng đã công bố; Google có thể nhận địa chỉ IP, thời điểm, User-Agent và URL được yêu cầu.</p></section>
+      <section lang="en"><h3>English</h3><p>Posts may contain external images, videos, or links. To display content and previews, the app may contact the linked website, image host, or a content provider such as a video or social platform. They may receive ordinary network-request information such as IP address, time, User-Agent, and requested URL. NextVoz does not control their data processing. At startup, the app also contacts Google Play to check the published app version; Google may receive the IP address, time, User-Agent, and requested URL.</p></section>
+    </div></article>
+
+    <article id="google-services"><h2>6. Phân tích &amp; quảng cáo / <span lang="en">Analytics &amp; advertising</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Bản Android chứa Firebase Analytics. Bản dựng có bật quảng cáo sử dụng Google Mobile Ads để tải quảng cáo xen kẽ. Tùy bản dựng, cấu hình SDK, lựa chọn người dùng và chính sách của Google, các SDK này có thể xử lý dữ liệu về ứng dụng, địa chỉ IP, thiết bị/mã nhận dạng quảng cáo, tương tác, chẩn đoán và mức sử dụng. Mã nguồn được kiểm tra không có sự kiện Analytics tùy chỉnh, nhưng điều đó không loại trừ việc SDK tự động xử lý dữ liệu. Dữ liệu Analytics được lưu theo cấu hình lưu giữ của thuộc tính Analytics và chính sách áp dụng của Google; thời gian có thể khác theo loại dữ liệu và cấu hình. NextVoz không có công cụ trong ứng dụng để xác định hoặc xóa từng bản ghi Analytics, và có thể không thể liên kết một bản ghi cụ thể với yêu cầu của bạn.</p><p>Tài liệu chính thức: <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Chính sách quyền riêng tư Google</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy</a>, và <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads data disclosure</a>.</p></section>
+      <section lang="en"><h3>English</h3><p>The Android build includes Firebase Analytics. Builds with advertising enabled use Google Mobile Ads to load interstitial ads. Depending on the build, SDK configuration, user choices, and Google's policies, these SDKs may process app information, IP address, device/advertising identifiers, interactions, diagnostics, and usage data. The audited source contains no custom Analytics events, but that does not exclude automatic SDK processing. Analytics data is retained according to the Analytics property retention configuration and Google's applicable policies; duration may vary by data type and configuration. NextVoz has no in-app tool to identify or delete individual Analytics records and may be unable to associate a specific record with your request.</p><p>Official resources: <a href="https://policies.google.com/privacy" rel="noopener noreferrer">Google Privacy Policy</a>, <a href="https://firebase.google.com/support/privacy" rel="noopener noreferrer">Firebase Privacy</a>, and <a href="https://developers.google.com/admob/android/privacy/play-data-disclosure" rel="noopener noreferrer">Google Mobile Ads data disclosure</a>.</p></section>
+    </div></article>
+
+    <article id="retention"><h2>7. Chia sẻ, lưu giữ &amp; xóa / <span lang="en">Sharing, retention &amp; deletion</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>NextVoz truyền dữ liệu đến diễn đàn, Google SDK và nhà cung cấp nội dung ngoài trong các trường hợp mô tả ở trên. Mỗi bên có thể lưu và xử lý dữ liệu theo chính sách riêng.</p><ul><li>Đăng xuất xóa cookie đang hoạt động và yêu cầu xóa phiên đã lưu cục bộ; nếu thao tác lưu trữ bị lỗi hoặc gián đoạn, dữ liệu phiên có thể còn lại. Đăng xuất có thể không thu hồi phiên tại máy chủ diễn đàn.</li><li>Bạn có thể xóa bookmark trong ứng dụng; xóa dữ liệu ứng dụng hoặc gỡ ứng dụng sẽ xóa dữ liệu trong vùng lưu trữ ứng dụng theo hành vi của hệ điều hành.</li><li>Ảnh đã chủ động lưu phải được xóa bằng công cụ quản lý tệp/ảnh của thiết bị.</li><li>Để xóa dữ liệu tài khoản, bài viết hoặc hoạt động phía diễn đàn, dùng cài đặt và kênh hỗ trợ của diễn đàn.</li></ul></section>
+      <section lang="en"><h3>English</h3><p>NextVoz transmits data to the forum, Google SDKs, and external content providers in the circumstances described above. Each party may retain and process data under its own policies.</p><ul><li>Signing out clears active cookies and requests deletion of the locally saved session; a storage failure or interruption may leave session data behind. Signing out may not revoke the server-side forum session.</li><li>You can remove bookmarks in the app; clearing app data or uninstalling removes app-container data according to operating-system behavior.</li><li>Images you explicitly saved must be removed through your device's file or photo tools.</li><li>For forum-side account, post, or activity deletion, use the forum's settings and support channels.</li></ul></section>
+    </div></article>
+
+    <article id="security"><h2>8. Bảo mật &amp; lựa chọn / <span lang="en">Security &amp; choices</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Không có phương thức truyền hoặc lưu trữ nào an toàn tuyệt đối. Cookie xác thực là dữ liệu nhạy cảm: hãy khóa thiết bị, cập nhật hệ điều hành, không chia sẻ cookie/mã xác minh và đăng xuất trên thiết bị không còn kiểm soát. Bạn có thể không đăng nhập, không dùng tính năng tương tác, xóa dữ liệu cục bộ hoặc ngừng sử dụng ứng dụng. Các lựa chọn quảng cáo/đo lường khác phụ thuộc bản dựng, hệ điều hành và thiết lập của Google.</p></section>
+      <section lang="en"><h3>English</h3><p>No transmission or storage method is completely secure. Authentication cookies are sensitive: lock your device, keep its software current, never share cookies or verification codes, and sign out on devices you no longer control. You may avoid signing in, avoid interactive features, clear local data, or stop using the app. Other ad or measurement choices depend on the build, operating system, and Google settings.</p></section>
+    </div></article>
+
+    <article id="children"><h2>9. Trẻ em &amp; đối tượng sử dụng / <span lang="en">Children &amp; audience</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>NextVoz không được thiết kế riêng cho trẻ em. Điều kiện độ tuổi phụ thuộc quy định pháp luật, cửa hàng ứng dụng và điều khoản của diễn đàn. Người giám hộ nên đánh giá nội dung diễn đàn và giám sát việc sử dụng phù hợp. Không gửi thông tin của trẻ em qua GitHub Issues.</p></section>
+      <section lang="en"><h3>English</h3><p>NextVoz is not designed specifically for children. Age eligibility depends on applicable law, app-store rules, and the forum's terms. Guardians should assess forum content and supervise use where appropriate. Do not submit children's information through GitHub Issues.</p></section>
+    </div></article>
+
+    <article id="changes"><h2>10. Thay đổi &amp; liên hệ / <span lang="en">Changes &amp; contact</span></h2><div class="languages">
+      <section lang="vi"><h3>Tiếng Việt</h3><p>Chính sách có thể được cập nhật khi tính năng, nhà cung cấp hoặc yêu cầu thay đổi. Phiên bản và ngày hiệu lực ở đầu trang xác định bản đang công bố. Thay đổi quan trọng sẽ được nêu tại đây hoặc trong ứng dụng khi phù hợp.</p><p>Câu hỏi về ứng dụng hoặc chính sách: <a href="https://github.com/cuongkjm/NextVozV2/issues" rel="noopener noreferrer">GitHub Issues</a>. Không đăng mật khẩu, mã xác minh, cookie phiên hoặc dữ liệu nhạy cảm. Với dữ liệu do diễn đàn kiểm soát, hãy dùng kênh của diễn đàn. Với câu hỏi không nhạy cảm về cấu hình Analytics của ứng dụng, dùng GitHub Issues; các bản ghi riêng lẻ có thể không xác định được. Dùng công cụ quyền riêng tư của Google cho dữ liệu và lựa chọn do Google kiểm soát.</p></section>
+      <section lang="en"><h3>English</h3><p>This policy may be updated when features, providers, or requirements change. The version and effective date above identify the published text. Material changes will be noted here or in the app when appropriate.</p><p>For app or policy questions, use <a href="https://github.com/cuongkjm/NextVozV2/issues" rel="noopener noreferrer">GitHub Issues</a>. Do not post passwords, verification codes, session cookies, or sensitive data. For forum-controlled data, use the forum's channels. For non-sensitive questions about the app's Analytics configuration, use GitHub Issues; individual records may not be identifiable. Use Google privacy tools for data and choices controlled by Google.</p></section>
+    </div></article>
+  </main>
+  <footer><p lang="en"><span translate="no">NextVoz</span> · Privacy Policy · Version 1.0 · <time datetime="2026-09-09">2026-09-09</time></p></footer>
+</body>
+</html>

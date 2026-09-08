@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fa" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101419" media="(prefers-color-scheme: dark)">
+  <meta name="description" content="Điều khoản sử dụng và Chính sách quyền riêng tư của NextVoz.">
+  <title>NextVoz Legal</title>
+  <style>
+    :root { color-scheme: light dark; --bg:#f5f7fa; --surface:#fff; --text:#17202a; --muted:#56616f; --line:#7a8796; --accent:#2458a6; --soft:#eaf1fb; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--bg); color:var(--text); font:1rem/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:var(--accent); text-underline-offset:.18em; }
+    a:hover { text-decoration-thickness:.15em; }
+    a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; border-radius:.15rem; }
+    .skip { position:absolute; left:-9999px; top:.5rem; }
+    .skip:focus { left:.75rem; z-index:2; padding:.5rem .75rem; background:var(--surface); }
+    header, main, footer { width:min(100% - 2rem, 52rem); margin-inline:auto; }
+    header { padding:4rem 0 2rem; }
+    h1 { margin:0; font-size:clamp(2rem,7vw,3.5rem); line-height:1.08; letter-spacing:-.035em; }
+    .lead { max-width:42rem; margin:.9rem 0 0; color:var(--muted); font-size:1.08rem; }
+    .meta { display:flex; flex-wrap:wrap; gap:.5rem 1.25rem; margin:1.25rem 0 0; color:var(--muted); font-size:.92rem; }
+    .notice { margin:0 0 1.25rem; padding:1rem 1.1rem; border:1px solid var(--line); border-left:4px solid var(--accent); border-radius:.6rem; background:var(--soft); }
+    .cards { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1rem; }
+    .card { display:flex; flex-direction:column; min-height:15rem; padding:1.4rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface); box-shadow:0 .3rem 1.2rem rgb(0 0 0 / .05); }
+    .card h2 { margin:0; font-size:1.35rem; }
+    .card p { color:var(--muted); }
+    .card a { display:inline-flex; align-items:center; min-height:44px; margin-top:auto; width:fit-content; padding:.25rem 0; font-weight:700; }
+    footer { padding:2.5rem 0 3rem; color:var(--muted); font-size:.92rem; }
+    @media (max-width:38rem) { header { padding-top:2.5rem; } .cards { grid-template-columns:1fr; } .card { min-height:0; } }
+    @media (prefers-color-scheme:dark) { :root { --bg:#101419; --surface:#171d24; --text:#eef3f8; --muted:#b5c0cc; --line:#75869a; --accent:#8bb8ff; --soft:#18263a; } }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#content">Bỏ qua đến nội dung / <span lang="en">Skip to content</span></a>
+  <header>
+    <p lang="en" translate="no">NextVoz</p>
+    <h1>Trang pháp lý <span lang="en">/ Legal</span></h1>
+    <p class="lead">Thông tin sử dụng và quyền riêng tư của ứng dụng NextVoz. <span lang="en">Terms and privacy information for the NextVoz application.</span></p>
+    <p class="meta"><span>Phiên bản chính sách / <span lang="en">Policy version</span>: <strong>1.0</strong></span><span>Hiệu lực / <span lang="en">Effective</span>: <time datetime="2026-09-09">2026-09-09</time></span></p>
+  </header>
+  <main id="content" tabindex="-1">
+    <aside class="notice" aria-label="Tuyên bố độc lập">
+      <strong>Ứng dụng độc lập / <span lang="en">Independent application.</span></strong>
+      NextVoz là ứng dụng khách độc lập kết nối đến một dịch vụ diễn đàn của bên thứ ba; ứng dụng không đại diện, không được tài trợ và không liên kết với đơn vị vận hành diễn đàn. <span lang="en">NextVoz is an independent client connecting to a third-party forum service; it is not operated, endorsed, sponsored by, or affiliated with the forum operator.</span>
+    </aside>
+    <nav class="cards" aria-label="Tài liệu pháp lý">
+      <article class="card">
+        <h2>Điều khoản &amp; UGC <span lang="en">/ Terms &amp; UGC</span></h2>
+        <p>Quy tắc sử dụng ứng dụng, tài khoản, nội dung do người dùng tạo, báo cáo và kiểm soát tương tác.</p>
+        <p lang="en">Rules for app use, accounts, user-generated content, reporting, and interaction controls.</p>
+        <a href="terms/">Đọc điều khoản / <span lang="en">Read terms</span></a>
+      </article>
+      <article class="card">
+        <h2>Quyền riêng tư <span lang="en">/ Privacy</span></h2>
+        <p>Dữ liệu được xử lý bởi ứng dụng, diễn đàn được kết nối, nội dung ngoài và các SDK của Google.</p>
+        <p lang="en">Data processed by the app, connected forum, external content, and Google SDKs.</p>
+        <a href="privacy/">Đọc chính sách / <span lang="en">Read policy</span></a>
+      </article>
+    </nav>
+  </main>
+  <footer>
+    <p>Liên hệ / <span lang="en">Contact</span>: <a href="https://github.com/cuongkjm/NextVozV2/issues" rel="noopener noreferrer">GitHub Issues</a>. Không đăng mật khẩu, cookie phiên hoặc dữ liệu nhạy cảm. <span lang="en">Do not post passwords, session cookies, or sensitive data.</span></p>
+  </footer>
+</body>
+</html>
